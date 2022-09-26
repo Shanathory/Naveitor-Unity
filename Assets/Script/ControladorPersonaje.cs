@@ -6,7 +6,7 @@ using UnityEngine;
 public class Personaje : MonoBehaviour
 {
     ControlaJuego cj;
-    Rigidboody2D rb;
+    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class Personaje : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.W))
                 {
-                    rd.AddForce(Vecor2.up, ForceMode2D.Force);
+                    rb.AddForce(Vector2.up, ForceMode2D.Force);
                 }
             }
         }
